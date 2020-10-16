@@ -1,6 +1,6 @@
 FROM maven:3.6.3-jdk-11
 
 WORKDIR /app
-COPY . /app
+COPY ./target/spring-petclinic-*.jar /app
 
-ENTRYPOINT mvn spring-boot:run
+ENTRYPOINT java -jar spring-petclinic-*.jar
