@@ -219,6 +219,15 @@
       </plugin>
 
       <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>6.0.3</version>
+        <configuration>
+          <format>ALL</format>
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${jacoco.version}</version>
